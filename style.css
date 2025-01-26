@@ -1,0 +1,189 @@
+@import url(fonts/fonts.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Futuralightc', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background: #07086C url('img/BG-img.png') no-repeat;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 70%;
+    padding: 50px 0;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.header__phone {
+    display: flex;
+    align-items: center;
+    width: 180px;
+}
+
+a {
+    color: white;
+}
+
+.header__menu-item {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.header__phone {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__phone-number {
+    font-weight: 400;
+}
+
+.header__phone-number>span {
+    font-weight: 700;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.header__content-text {
+    width: 60%;
+}
+
+.header__title {
+    font-family: 'Futurafuturisc', sans-serif;
+    font-size: 69px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+}
+
+.header__title>span {
+    font-weight: 600;
+    text-transform: lowercase;
+    color: #969AF7;
+}
+
+.header__description {
+    font-family: 'Futurabookc', sans-serif;
+    color: #969AF7;
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.header__list-item {
+    margin-bottom: 5px;
+}
+
+.header__list {
+    font-family: 'Futurabookc', sans-serif;
+    font-size: 22px;
+    list-style: none;
+    margin: 50px 0;
+    color: white;
+    background: linear-gradient(90deg, #57589e, rgba(195, 197, 255, 0) 100%);
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+.header__list-icon {
+    margin-right: 10px;
+}
+
+
+.wave-container {
+    position: relative;
+    background-color: #07086C;
+    height: 100px;
+    margin-top: 120px;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.callback-form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 320px;
+}
+
+.callback-form h2 {
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #3f1f91;
+    margin: -20px -20px 20px -20px;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.callback-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.callback-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.callback-form button {
+    background-color: #fca000;
+    /* Оранжевый цвет кнопки */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.callback-form button:hover {
+    background-color: #e08c00;
+}
+
+.callback-form .confidentiality {
+    font-size: 12px;
+    color: #555555;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.confidentiality>span {
+    width: 80%;
+}
+
