@@ -5,12 +5,14 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-family: 'Futuralightc', sans-serif;
+    font-family: 'Futurafuturisc', sans-serif;
     box-sizing: border-box;
 }
 
 header {
     background: #07086C url('img/BG-img.png') no-repeat;
+    z-index: 1;
+    position: relative;
 }
 
 .header__nav {
@@ -25,7 +27,7 @@ header {
 .header__menu {
     display: flex;
     justify-content: space-between;
-    width: 800px;
+    width: 650px;
 }
 
 .header__phone {
@@ -61,11 +63,11 @@ a {
     justify-content: space-between;
     width: 70%;
     margin: auto;
-    margin-top: 50px;
+    padding: 50px 0 150px;
 }
 
 .header__content-text {
-    width: 60%;
+    width: 800px;
 }
 
 .header__title {
@@ -74,6 +76,7 @@ a {
     font-weight: 900;
     text-transform: uppercase;
     color: white;
+
 }
 
 .header__title>span {
@@ -109,18 +112,15 @@ a {
     margin-right: 10px;
 }
 
-
-.wave-container {
-    position: relative;
-    background-color: #07086C;
-    height: 100px;
-    margin-top: 120px;
+.burger {
+    display: none;
+    width: 32px;
+    height: 32px;
+    filter: invert(1);
 }
 
-.wave {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.burger>svg {
+    z-index: 1;
 }
 
 .callback-form {
@@ -130,6 +130,7 @@ a {
     padding: 20px;
     text-align: center;
     width: 320px;
+    margin-bottom: 150px;
 }
 
 .callback-form h2 {
@@ -187,3 +188,144 @@ a {
     width: 80%;
 }
 
+.benefits-section {
+    position: relative;
+    background-color: #f9fafc;
+    overflow: hidden;
+}
+
+.wave {
+    bottom: 0;
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    display: block;
+}
+
+.benefits-section__container {
+    width: 70%;
+    margin: auto;
+    padding: 50px 0 150px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title {
+    font-size: 45px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.section-title_white {
+    color: white;
+}
+
+.section-desc {
+    font-size: 22px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.benefit-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    font-family: 'Futurafuturisc', sans-serif;
+}
+
+.benefit-card .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    background-color: #001f80;
+    border-radius: 50%;
+}
+
+.benefit-card h3 {
+    font-size: 20px;
+    color: #2A336C;
+    margin-bottom: 10px;
+}
+
+.benefit-card p {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.6;
+    font-family: 'Futurabookc', sans-serif;
+}
+
+/* MANUFACTURERS */
+
+.manufacturers-sections {
+    background: #0809A7 url('img/BG-img2.png') no-repeat;
+}
+
+.manufacturers-sections__container {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    gap: 50px;
+    margin: 50px;
+
+}
+
+.slider__img-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    /* Ширина контейнера минус кнопки */
+    max-width: calc(100% - 100px);
+    box-sizing: border-box;
+}
+
+.slider-slide {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1600px) {
+    .header__menu {
+        display: none;
+    }
+
+    .header__phone {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .header__content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
